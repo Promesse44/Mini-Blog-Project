@@ -1,3 +1,19 @@
+Mini Blog — Dev Insights
+
+Small demo blog built with Vite + React + TypeScript.
+
+Run locally:
+
+```bash
+cd mini-blog
+npm install
+npm run dev
+```
+
+What I changed:
+- Added component styles for `Header` and `Post`.
+- Added a responsive header and main layout spacing.
+- Added a short README and a conditional "New" badge for recent posts.
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
