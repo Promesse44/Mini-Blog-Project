@@ -16,6 +16,16 @@
   font-weight: 600;
 }
 
+.theme-toggle {
+  margin-left: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--accent);
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .header {
     flex-direction: column;
