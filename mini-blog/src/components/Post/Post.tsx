@@ -1,4 +1,5 @@
 import type { Post as PostType } from '../../types/post'
+import './post.css'
 
 interface PostProps {
   post: PostType
@@ -6,13 +7,17 @@ interface PostProps {
 
 function Post({ post }: PostProps) {
   const preview = `${post.content.split(' ').slice(0, 12).join(' ')}...`
+  const postDate = new Date(post.date)
+  const isNew = Date.now() - postDate.getTime() < 24 * 60 * 60 * 1000
 
   return (
-    <article>
-      <h2>{post.title}</h2>
-      <p>By {post.author}</p>
-      <p>{preview}</p>
-      <p>{post.date}</p>
+    <article className="post">
+      <h2>
+        {post.title}
+        {isNew && <span className="badge">New</span>}
+      </h2>
+      <p className="meta">By {post.author} — <time>{post.date}</time></p>
+      <p className="preview">{preview}</p>
     </article>
   )
 }

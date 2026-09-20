@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(90deg, rgba(170,59,255,0.06), transparent 60%);
+}
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.header nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
