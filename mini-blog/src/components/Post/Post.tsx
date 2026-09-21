@@ -1,5 +1,7 @@
+import React from 'react'
 import type { Post as PostType } from '../../types/post'
 import './post.css'
+import withLogger from '../../hoc/withLogger'
 
 interface PostProps {
   post: PostType
@@ -22,4 +24,5 @@ function Post({ post }: PostProps) {
   )
 }
 
-export default Post
+const Memoed = React.memo(Post)
+export default withLogger(Memoed)
