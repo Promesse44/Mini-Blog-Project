@@ -52,16 +52,16 @@
 
 /* Manual theme override when user toggles */
 .theme-dark {
-  --text: #9ca3af;
+  --text: #d1d5db;
   --text-h: #f3f4f6;
-  --bg: #16171d;
-  --border: #2e303a;
-  --code-bg: #1f2028;
+  --bg: #111827;
+  --border: #374151;
+  --code-bg: #1f2937;
   --accent: #c084fc;
   --accent-bg: rgba(192, 132, 252, 0.15);
   --accent-border: rgba(192, 132, 252, 0.5);
-  --social-bg: rgba(47, 48, 58, 0.5);
-  --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6 -2px;
+  --social-bg: rgba(31, 41, 55, 0.8);
+  --shadow: rgba(0, 0, 0, 0.45) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
 }
 
 #root {
@@ -74,10 +74,16 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 body {
   margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 h1,
